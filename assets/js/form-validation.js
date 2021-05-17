@@ -17,4 +17,18 @@
       document.getElementById("cidade").value="";
       document.getElementById("uf").value="";
     }
-    
+    const getAdressByCep =(cep)=>{
+      console.log("chamou");
+    if(isValidCep(cep)){
+      console.log("is valid");
+      let url=`https://viacep.com.br/ws/${cep}/json/?callback=fillAdress`;
+      console.log("buscando cep "+url);
+    let script = document.createElement("script");
+    script.src=url;
+    document.body.appendChild(script);
+    }
+    else{
+      alert("CEP inválido...");
+    cleanAdress();
+    }
+    }
