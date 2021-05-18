@@ -32,16 +32,16 @@
 <label for="endereco">Endereço (Rua / Avenida): </label>
 <input required type="text" name="endereco" id="endereco"><br>
 <label for="numero">Número da casa / apto: </label>
-<input required type="number" name="numero" id="numero"><br>
+<input required type="number" min="0" step="1" name="numero" id="numero"><br>
 <label for="bairro">Bairro: </label>
 <input type="text" name="bairro" id="bairro"><br>
 <label for="cidade">Cidade: </label>
 <input type="text" name="cidade" id="cidade"><br>
 <label for="uf">UF / Estado: </label>
 <input type="text" name="uf" id="uf"><br>
-<label for="tel">Telefone fixo (somente números): </label>
+<label for="tel">Telefone fixo (somente números, com DDD sem o 0): </label>
 <input type="tel" name="tel" id="tel"><br>
-<label for="cel">Telefone celular (somente números): </label>
+<label for="cel">Telefone celular (somente números, com DDD sem o 0): </label>
 <input required type="tel" name="cel" id="cel"><br>
 <button name="salvar" id="salvar">Salvar dados</button>
 
@@ -53,7 +53,10 @@
 
   </footer>
   <script src="assets/js/cep.js"></script>
+  <script src="assets/js/cpf.js"></script>
   <script src="assets/js/form-validation.js"></script>
   <script src="assets/js/main.js"></script>
+  
+    
 </body>
 </html>
