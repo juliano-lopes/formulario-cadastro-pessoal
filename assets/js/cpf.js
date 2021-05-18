@@ -1,7 +1,7 @@
 const cpfValidation = (cpf)=>  {
   let sum,rest;
   sum = 0;
-if (cpf == "00000000000"){
+if (!/^[0-9]{11}$/.test(cpf) || (cpf == "00000000000")){
 return false;
 }
 
