@@ -40,3 +40,15 @@ document.getElementById(targetElement.getAttribute("for")).onkeydown = (e)=>{
 
 
 }
+const getPersonData=()=>{
+  let person={};
+ document.getElementById("people-form").querySelectorAll("input, select").forEach((field)=>{
+   
+person[field.id]= field.id=="id" ? parseInt(field.value) : field.value;
+ }); 
+ console.log("os dados pessoais do formulario foram: ",person);
+ return person;
+}
+const cleanForm = (form)=>{
+form.reset();
+}
