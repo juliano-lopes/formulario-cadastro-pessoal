@@ -1,6 +1,7 @@
     const formValidation = ()=>{
       const cpf = document.getElementById("cpf");
       const celPhone=document.getElementById("cel");
+      const btnSave=document.getElementById("salvar");
 if(!cpfValidation(cpf.value)){
   alert("CPF inválido...");
   document.getElementById("cpf").focus();
@@ -12,7 +13,10 @@ if(!isValidCelPhone(celPhone.value)){
   
   return false;
 }
-
+  
+addPeople(getPersonData()); 
+getPeople();
+cleanForm(document.getElementById("people-form"));
       return false;
     }
 
