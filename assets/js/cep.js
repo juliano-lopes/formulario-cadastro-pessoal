@@ -15,16 +15,16 @@ const cleanAdress = (adressData)=>{
 }
 const getAdressByCep =(cep)=>{
   console.log("chamou");
-if(isValidCep(cep)){
+if(isValidCep(cep.value)){
   console.log("is valid");
-  let url=`https://viacep.com.br/ws/${cep}/json/?callback=fillAdress`;
+  let url=`https://viacep.com.br/ws/${cep.value}/json/?callback=fillAdress`;
   console.log("buscando cep "+url);
 let script = document.createElement("script");
 script.src=url;
 document.body.appendChild(script);
 }
 else{
-  alert("CEP inválido...");
+  roleAlert(document.querySelector('label[for='+cep.id+']'),"Preenchimento incorreto...");
 cleanAdress();
 }
 }

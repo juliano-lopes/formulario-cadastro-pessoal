@@ -11,7 +11,7 @@ const cpf = document.getElementById("cpf");
       
     const cep = document.getElementById("cep");
     cep.onchange = (e)=>{
-getAdressByCep(e.target.value);
+getAdressByCep(e.target);
     }
     const phone = document.getElementById("tel");
 phone.onchange=(e)=>{
