@@ -26,6 +26,4 @@ phone.onchange=(e)=>{
       roleAlert(document.querySelector('label[for='+e.target.id+']'),"Preenchimento incorreto...");
     }
   }
-
-
     }
