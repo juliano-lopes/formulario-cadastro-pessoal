@@ -32,6 +32,9 @@ body {
  padding: 10px;
  background-color: burlywood;
 }
+.table {
+  text-transform: capitalize;
+}
 .form-section {
   display: flex;
   flex-direction: column;
