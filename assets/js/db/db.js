@@ -27,6 +27,7 @@ const addPeople = (people) =>{
 
     if(people.id){
       document.getElementById("id").parentNode.removeChild(document.getElementById("id"));
+      document.getElementById("salvar").textContent="Salvar dados";
      alert("Os dados de "+people.nome+"foram atualizados com sucesso!");
     } else {
       alert("Cadastro efetuado com sucesso!");
@@ -98,6 +99,18 @@ updateInput.setAttribute("data-id",person.id);
 updateInput.value=person.id;
 peopleForm.insertBefore(updateInput,peopleForm.firstChild);
 peopleForm.querySelector('#nome').focus();
+document.getElementById("salvar").textContent="Atualizar dados";
+
+let cancelButton = document.createElement("button");
+cancelButton.setAttribute("type","button");
+cancelButton.textContent="Cancelar";
+cancelButton.addEventListener("click",(e)=>{
+  document.getElementById("salvar").textContent="Salvar dados";
+  document.getElementById("id").parentNode.removeChild(document.getElementById("id"));
+  cancelButton.parentNode.removeChild(cancelButton);
+  cleanForm(document.getElementById("people-form"));
+});
+peopleForm.querySelector(".field-btn").appendChild(cancelButton);
   }
 }
 const addPeopleOnTable = (people)=>{
