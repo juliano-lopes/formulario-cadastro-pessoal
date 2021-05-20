@@ -28,6 +28,7 @@ errorElement.setAttribute("role","alert");
 errorElement.setAttribute("data-error-msg","error");
 targetElement.insertBefore(errorElement,targetElement.firstChild);
 errorElement.textContent=`(!) ${msg} `;
+targetElement.parentNode.setAttribute("style","background-color: red;");
 setTimeout(function(){
   errorElement.removeAttribute("role");
 },200);
@@ -35,6 +36,7 @@ setTimeout(function(){
 document.getElementById(targetElement.getAttribute("for")).onkeydown = (e)=>{
   if(targetElement.querySelector('[data-error-msg]')){
     targetElement.removeChild(targetElement.querySelector('[data-error-msg]'));
+    targetElement.parentNode.removeAttribute("style");
   }
 }
 
