@@ -27,6 +27,7 @@ const addPeople = (people) =>{
 
     if(people.id){
       document.getElementById("id").parentNode.removeChild(document.getElementById("id"));
+      document.getElementById("cancelar").parentNode.removeChild(document.getElementById("cancelar"));
       document.getElementById("salvar").textContent="Salvar dados";
      alert("Os dados de "+people.nome+"foram atualizados com sucesso!");
     } else {
@@ -102,6 +103,7 @@ peopleForm.querySelector('#nome').focus();
 document.getElementById("salvar").textContent="Atualizar dados";
 
 let cancelButton = document.createElement("button");
+cancelButton.id="cancelar";
 cancelButton.setAttribute("type","button");
 cancelButton.textContent="Cancelar";
 cancelButton.addEventListener("click",(e)=>{
