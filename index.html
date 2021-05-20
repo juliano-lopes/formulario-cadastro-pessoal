@@ -5,14 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro pessoal</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-  <header>
+<body class="container">
+  <header class="header">
 <h1>Cadastro de dados pessoais</h1>
   </header>
-  <main>
-    <section>
-<table id="people-table">
+  <main class="main">
+    <section class="table-section" aria-labelledby="table-section-title">
+      <div class="section-title">
+      <h2 id="table-section-title">Pessoas cadastradas</h2>
+</div>
+
+<table id="people-table" class="table">
   <caption>Pessoas cadastradas</caption>
   <thead>
   <tr>
@@ -36,46 +41,75 @@
     </tbody>
 </table>
     </section>
-    <section>
-<h2>Formulário de cadastro</h2>
+    <section class="form-section" aria-labelledby="form-section-title">
+      <div class="section-title">
+<h2 id="form-section-title">Formulário de cadastro</h2>
 <p>Informe seus dados:</p>
-<form id="people-form">
+</div>
+
+<form id="people-form" class="form-section-body">
+  <div class="field">
 <label for="nome">Nome completo: </label>
 <input required type="text" name="nome" id="nome"><br>
+</div>
+<div class="field">
 <label for="cpf">CPF (somente números): </label>
 <input required type="text" name="cpf" id="cpf"><br>
+</div>
+<div class="field">
 <label for="rg">RG: </label>
 <input type="text" name="rg" id="rg"><br>
+</div>
+<div class="field">
 <label for="sexo">Sexo: </label>
 <select name="sexo" id="sexo">
   <option value="-">...</option>
   <option value="f">Feminino</option>
   <option value="m">Masculino</option>
 </select>
+</div>
+<div class="field">
 <label for="cep">CEP (somente números): </label>
 <input type="text" name="cep" id="cep"><br>
+</div>
+<div class="field">
 <label for="endereco">Endereço (Rua / Avenida): </label>
 <input required type="text" name="endereco" id="endereco"><br>
+</div>
+<div class="field">
 <label for="numero">Número da casa / apto: </label>
 <input required type="number" min="0" step="1" name="numero" id="numero"><br>
+</div>
+<div class="field">
 <label for="bairro">Bairro: </label>
 <input type="text" name="bairro" id="bairro"><br>
+</div>
+<div class="field">
 <label for="cidade">Cidade: </label>
 <input type="text" name="cidade" id="cidade"><br>
+</div>
+<div class="field">
 <label for="uf">UF / Estado: </label>
 <input type="text" name="uf" id="uf"><br>
+</div>
+<div class="field">
 <label for="tel">Telefone fixo (somente números, com DDD sem o 0): </label>
 <input type="tel" name="tel" id="tel"><br>
+</div>
+<div class="field">
 <label for="cel">Telefone celular (somente números, com DDD sem o 0): </label>
 <input required type="tel" name="cel" id="cel"><br>
+</div>
+<div class="field-btn">
 <button name="salvar" id="salvar">Salvar dados</button>
+</div>
 
 </form>
 </section>
-</p>
-  </main>
-  <footer>
 
+  </main>
+  <footer class="footer">
+<p>&copy; todos os direitos reservados - Powered by <strong>Juliano Lopes</strong></p>
   </footer>
   <script src="assets/js/db/db.js"></script>
   <script src="assets/js/cep.js"></script>
