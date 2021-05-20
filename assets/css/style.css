@@ -3,6 +3,29 @@ body {
   padding: 0px;
   font-family: monospace;
 }
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+padding: 5px;
+border: 1px solid royalblue;
+}
+td {
+  padding: 5px;
+  background-color: darkgrey;
+border: 1px solid royalblue;
+}
+a {
+color: #000;
+padding: 5px;
+cursor: pointer;
+}
+a:hover {
+  color: grey;
+}
+input {
+  background-color: #fff;
+  }
+
 .container {
  display: flex;
  flex-direction: column;
@@ -77,26 +100,15 @@ border: 1px solid royalblue;
 }
 .footer {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   background-color: darkgrey;
 }
-table {
-  border-collapse: separate;
-  border-spacing: 5px;
-padding: 5px;
-
-border: 1px solid royalblue;
-}
-td {
-  padding: 5px;
-  background-color: darkgrey;
-border: 1px solid royalblue;
-
-}
-
-input {
-  background-color: #fff;
-  
+.footer-medias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
