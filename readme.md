@@ -6,7 +6,7 @@ Esse projeto foi desenvolvido utilizando-se as seguintes linguagens e ferramenta
 * CSS3
 * JavaScript
 * GIT
-* NetLify
+* Netlify
 * VSCode
 #### HTML5
 Toda a estrutura da página foi desenvolvida utilizando os recursos mais recentes da linguagem HTML.
