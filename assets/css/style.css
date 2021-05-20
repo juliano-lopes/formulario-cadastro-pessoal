@@ -1,0 +1,97 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: monospace;
+}
+.container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: darkgrey;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.table-section {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ background-color: burlywood;
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ padding: 10px;
+ 
+}
+.form-section-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: auto;
+}
+.form-section-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+background-color: burlywood;
+
+}
+.field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+background-color: darkgrey;
+border: 1px solid royalblue;
+}
+.field-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+  background-color: darkgrey;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+padding: 5px;
+
+border: 1px solid royalblue;
+}
+td {
+  padding: 5px;
+  background-color: darkgrey;
+border: 1px solid royalblue;
+
+}
+
+input {
+  background-color: #fff;
+  
+}
