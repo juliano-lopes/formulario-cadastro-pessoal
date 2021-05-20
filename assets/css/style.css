@@ -32,6 +32,7 @@ body {
  padding: 10px;
  background-color: burlywood;
 }
+
 .table {
   text-transform: capitalize;
 }
@@ -43,7 +44,7 @@ body {
  padding: 10px;
  
 }
-.form-section-title{
+.section-title{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
