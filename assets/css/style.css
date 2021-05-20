@@ -9,10 +9,11 @@ table {
 padding: 5px;
 border: 1px solid royalblue;
 }
-td {
+th, td {
   padding: 5px;
   background-color: darkgrey;
 border: 1px solid royalblue;
+text-align: center;
 }
 a {
 color: #000;
