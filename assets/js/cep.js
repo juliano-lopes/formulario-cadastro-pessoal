@@ -6,8 +6,8 @@ const fillAdress = (adressData)=>{
   document.getElementById("cidade").value=adressData.localidade;
   document.getElementById("uf").value=adressData.uf;
 }
-const cleanAdress = (adressData)=>{
-  
+const cleanAdress = ()=>{
+  document.getElementById("cep").value="";
   document.getElementById("endereco").value="";
     document.getElementById("bairro").value="";
   document.getElementById("cidade").value="";
