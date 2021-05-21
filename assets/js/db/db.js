@@ -12,11 +12,11 @@ openConnection.onupgradeneeded = (e)=>{
   }
   openConnection.onsuccess=(e)=>{
     db=e.target.result;
-    console.log("sucesso ao conectar ao banco: ",db);
+    
 getPeople();
   }
   openConnection.onerror=(e)=>{
-    console.log("Erro ao conectar ao banco: ",e.target.result);
+    
   }
 }
 const addPeople = (people) =>{
@@ -45,13 +45,13 @@ const getPeople = () =>{
   let select = store.getAll();
   
   select.onsuccess=(e)=>{
-    console.log("todas as pessoas: ",e.target.result);
+    
     
   e.target.result ? addPeopleOnTable(e.target.result) : false;  
   }
 
     select.onerror=(e)=>{
-    console.log("Erro ao consultar cadastro: ",e.target.result);
+    
   }
   
 }
@@ -78,12 +78,12 @@ const updatePeople = (linkElement) =>{
   let select = store.get(parseInt(linkElement.getAttribute("data-id")));
   
   select.onsuccess=(e)=>{
-    console.log("pessoa para atualizar: ",e.target.result);
+    
     fillFormWithPersonData(e.target.result);
   }
 
     select.onerror=(e)=>{
-    console.log("Erro ao atualizar dados pessoais...");
+    
   }
 
 }
