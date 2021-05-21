@@ -48,7 +48,7 @@ const getPersonData=()=>{
    
 person[field.id]= field.id=="id" ? parseInt(field.value) : field.value;
  }); 
- console.log("os dados pessoais do formulario foram: ",person);
+ 
  return person;
 }
 const cleanForm = (form)=>{
