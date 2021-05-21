@@ -17,6 +17,7 @@ getAdressByCep(e.target);
 phone.onchange=(e)=>{
   if(!isValidPhone(e.target.value)){
     roleAlert(document.querySelector('label[for='+e.target.id+']'),"Preenchimento incorreto...");
+    phone.value="";
   }
 }
 
